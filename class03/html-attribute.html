@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- <html lang="en" dir="rtl"> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 dir="ltr" title="A" style="" onclick="changecontent()">Four core attributes you can put in any html elements</h1>
+    <ul id="mylist">
+        <li title="B" style="" id="" class="">title attribute</li>
+        <li>style</li>
+        <li>id</li>
+        <li>class</li>
+    </ul>
+    <script>
+        function changecontent() {
+            let rand = parseInt(Math.random()*1000);
+            // alert(rand);
+            document.getElementsByTagName("h1")[0].innerHTML = "content changed";
+            document.querySelector("#mylist").innerHTML += "<img src='https://picsum.photos/id/"+rand+"/300/200'/>";
+        }
+    </script>
+</body>
+</html>
