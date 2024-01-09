@@ -1,0 +1,9 @@
+h1{ color:red}
+h2{ color:green}
+.darkmode{ background-color: #633535; color: white;}
+body{
+    background-image: url(assets/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background-image: linear-gradient(to top,red, green, blue,teal); */
+}
