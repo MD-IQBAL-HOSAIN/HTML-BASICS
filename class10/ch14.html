@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="">Division</label>
+        <input type="text" name="division" id="division" list="divisionlist">
+        <datalist id="divisionlist">
+            <option value="+880">Bangladesh</option>
+            <option value="Chittagong">Chittagong</option>
+            <option value="Rajshahi">Rajshahi</option>
+            <option value="Sylhet">Sylhet</option>
+            <option value="Rangpur">Rangpur</option>
+            <option value="Barishal">Barishal</option>
+            <option value="Maymenshing">Maymenshing</option>
+            <option value="Noakhali">Noakhali</option>
+            <option value="Khulna">Khulna </option>       
+    </datalist>
+    </form>
+    <hr>
+    <form action="calculate-it.php" method="post"> 
+        <input name="value1" id="value1" type="number" onchange="calc()"> x
+        <input name="value2" id="value2" type="number" onchange="calc()"> =
+        <!-- <output name="total" id="total" for="value1 value2"></output> -->
+        <input type="number" id="total">
+        <!-- <input name="submit" type="submit"> -->
+        </form>
+        <script>
+function calc(){
+    document.getElementById("total").value = parseInt(document.getElementById("value1").value) * parseInt(document.getElementById("value2").value);
+}
+        </script>
+</body>
+</html>
