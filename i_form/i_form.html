@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/js/bootstrap.css">
+    <style>
+           h1 {
+            text-align: center;
+            text-wrap: wrap;
+            color: brown;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-style: italic;
+            text-shadow: 0px 0px 5px green;
+
+        }
+        body{
+            background-color: grey;
+        }
+        .fform{
+            margin-top: 5%;
+            border-color: brown;
+            border: 2px solid red;
+            border-radius: 15px;
+            box-shadow: 0 0 40px red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Nav start -->
+
+    <!-- Nav End -->
+
+
+    <!-- Form start -->
+    <fieldset class="container">
+        <legend><b></b></legend>
+        
+        <form class="row g-3 container bg-light fform">
+            <h1><b>Result Calculator</b></h1>
+
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label"><strong>Mid written</strong></label>
+                <input type="number" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label"><strong>Mid Evidence</strong></label>
+                <input type="number" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label"><strong>Monthly written</strong></label>
+                <input type="number" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label"><strong>Monthly Evidence</strong></label>
+                <input type="number" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress" class="form-label"><strong>Result</strong></label>
+                <input type="text" class="form-control" id="inputAddress"
+                    placeholder="Your Mark is:  And you are PASS/FAIL">
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Check me out
+                    </label>
+                </div>
+            </div>
+             <!-- <div class="col-12">
+               <button type="submit" class="btn btn-primary">SUBMIT</button>
+               </div> -->
+            <nav class="navbar bg-body-tertiary">
+                <div class="container ">
+                    <button class="btn btn-outline-success me-2" type="submit">Check Result</button>
+                    <button class="btn btn-sm btn-outline-danger" type="reset">Clear Form</button>
+                </div>
+            </nav>
+        </form>
+    </fieldset>
+    <!-- Form end -->
+</body>
+
+</html>
